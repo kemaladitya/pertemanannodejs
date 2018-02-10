@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>OfficeFriendsList :D</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontgoogle -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+
+  <body class="bg-secondary " >
+
+
+<!-- Gambarlogo apalah -->
+<div id="contain" class="" >
+     <div class="row">
+    <div class="col">
+     <img id="gambar" src="/images/chataja.gif" width="350px">
+    </div>
+    <div class="col ">
+      <span id="judul">
+                           OFFICE <BR>
+  <span class="text-light">FRIEND<BR> </span>
+                           LIST :)       
+      </span>
+    </div>
+    <div class="col">
+      <!-- quote  -->
+      <p class="lead text-light">“The truth is, everyone is going to hurt you. You just got to find the ones worth suffering for.” <br>
+― Bob Marley</p><hr>
+       <!--trigger  -->
+    <button  type="submit" id="btn-home" class="btn btn-info btn-lg" data-toggle="modal" data-target="#exampleModallogin">Sign In</button>
+    <button type="submit" id="btn-home"  class="btn btn-danger btn-lg" data-toggle="modal" data-target="#exampleModalsignup">Sign Up</button>
+    </div>
+  </div>
+  </div>
+  <hr class="container-fluid">
+  <center><span id="copy" class="lead text-white">&copy; Copyright 2018 All Right Reserved By Kemal Aditya & Reza Azman</span></center>
+  
+
+<!-- modalnya -->
+<div class="modal fade" id="exampleModallogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header ">
+            <h5 class="modal-title" id="exampleModalLabel">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="modal-body">
+            <!-- formNYA -->
+           <!-- <form >                -->
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" aria-describedby="" placeholder="Masukan email">
+<!--                   <small id="emailHelp" class="form-text text-muted">Masukan username anda</small>
+ -->               </div>
+               <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" name="password" class="form-control" id="password" placeholder="Password">
+               </div>
+               <!--  <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div> -->
+                  <br><hr>
+               <button type="submit" class="btn btn-primary" id="submit" onClick="checkUser()">Sign In</button>
+            <!-- </form> -->
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+<!-- modal buat signup -->
+<!-- modalnya -->
+<div class="modal fade" id="exampleModalsignup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+      <div class="modal-content">
+         <div class="modal-header ">
+            <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+         </div>
+         <div class="daftarForm">
+            <!-- formNYA -->
+               <div class="form-group">
+                  <label for="exampleInputPassword1">Nama Lengkap</label>
+                  <input type="text" name="profile_name" id="profile-signup" class="form-control" placeholder="Enter Nama">
+               </div>
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Email</label>
+                  <input type="email" name="email" id="email-signup" class="form-control"  aria-describedby="emailHelp" placeholder="Enter email">
+                  <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+               </div>
+               <div class="form-group">
+                  <label for="exampleInputEmail1">Password</label>
+                  <input type="password" name="password" id="password-signup" class="form-control" aria-describedby="" placeholder="Enter Konfirmasi Password">
+                  <!-- <small id="emailHelp" class="form-text text-muted"></small> -->
+               </div>
+               <div class="form-group">
+                  <label for="exampleInputPassword1">Konfirmasi Password</label>
+                  <input type="password" name="konfirmasiPassword" id="konfirmasi-signup" class="form-control" placeholder="Enter Konfirmasi Password">
+               </div>
+               <!--  <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div> -->
+                  <br><hr>
+               <button type="submit" class="btn btn-primary" id="signup" onClick="signup()" >Submit</button>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+
+<!-- MODAL ALERT -->
+<div class="modal" tabindex="-1" role="dialog" id="emaildanpasswordkosong">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="alert alert-danger" role="alert">
+		  Email dan password masih kosong.
+		</div>
+    </div>
+  </div>
+</div>
+<!-- MODAL ALERT -->
+
+<!-- MODAL ALERT -->
+<div class="modal" tabindex="-1" role="dialog" id="emailkosong">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="alert alert-danger" role="alert">
+		  Email kosong.
+		</div>
+    </div>
+  </div>
+</div>
+<!-- MODAL ALERT -->
+
+<!-- MODAL ALERT -->
+<div class="modal" tabindex="-1" role="dialog" id="passwordkosong">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="alert alert-danger" role="alert">
+		  Password kosong.
+		</div>
+    </div>
+  </div>
+</div>
+<!-- MODAL ALERT -->
+
+<!-- MODAL ALERT -->
+<div class="modal" tabindex="-1" role="dialog" id="emaildanpasswordsalah">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="alert alert-danger" role="alert">
+		  Email atau password salah!
+		</div>
+    </div>
+  </div>
+</div>
+<!-- MODAL ALERT -->
+
+
+
+<!-- cdnjquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/javascripts/checkuser.js"></script>
+  </body>
+</html>

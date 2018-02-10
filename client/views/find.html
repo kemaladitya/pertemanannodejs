@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Find</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- fontgoogle -->
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  </head>
+
+  <body class="bg-secondary">
+
+    <div class="container"><br>
+
+<center>
+
+<!-- BUTTONSEARCH -->
+<div class="row justify-content-center">  
+  <div class="col-5 bg-secondary p-0 ">    
+      <!-- <nav class="navbar navbar-light float-left p-0">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2"  type="search" placeholder="Search" aria-label="Search">
+          <button class="   p-1" id="btn-search" type="submit"><img src="icon/search.png" width="50px"></button>
+        </form>
+      </nav> -->    
+
+      <button type="submit" class="btn btn-danger float-right" onclick="logout()">Sign Out</button>
+  </div>
+</div>
+
+<br>
+ 
+   
+
+<div class="input-group justify-content-center  ">
+  <span class="input-group-btn">
+    <input id="ipt-src" class="form-control mr-sm-0 " name="key" type="search" placeholder="Search" aria-label="Search">
+  </span>
+<button class="p-1" id="btn-search" type="submit" onclick="find()"><img src="/images/search.png" id="icn-src"></button>
+</div>
+
+
+<!-- list -->
+<div class="container"><br>
+
+  <center>
+    <div class="row justify-content-center " >
+      <div class="col-5 bg-light" id="xxx">
+
+        <ul id="friendList">
+          
+          
+        </ul>
+
+
+      </div>     
+    </div>   
+  </center>
+ 
+</div>
+
+<!-- MODAL ALERT -->
+<div class="modal" tabindex="-1" role="dialog" id="berhasiltemenan">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="alert alert-success" role="alert">
+		  Berhasil ditambahkan sebagai teman.
+		</div>
+    </div>
+  </div>
+</div>
+<!-- MODAL ALERT -->
+
+
+<!-- cdnjquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <!--  <script src="https://code.jquery.com/jquery-2.2.4.js", integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=", crossorigin="anonymous"></script>
+    <script  src="https://code.jquery.com/jquery-3.2.1.min.js"  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="  crossorigin="anonymous"></script> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <!--   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="/javascripts/findlist.js"></script>
+  </body>
+</html>
